@@ -13,8 +13,7 @@ public class LoggingTransform : MonoBehaviour {
     {
         if (Logging)
         {
-            Debug.Log(name +"\n"+ transform.position + "\n" + transform.eulerAngles + "\n" + transform.localScale );
-
+            Debug.Log(name +"\n"+ transform.position.ToString("F3") + "\n" + transform.eulerAngles.ToString("F3") + "\n" + transform.localScale.ToString("F3"));
         }
         Logging = false;
         
